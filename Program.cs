@@ -27,6 +27,24 @@ namespace Exercicio3_Fixacao_Condicionais
                 Console.WriteLine($"Valor líquido a ser pago: R$ {valorFinal}");
             }
 
+            if(quantidade >5 && quantidade <= 10)
+            {
+                double desconto = valorTotal *0.03;
+                Console.WriteLine($"Valor do desconto: R$ {desconto}");
+
+                double valorFinal = valorTotal * 0.97;
+                Console.WriteLine($"Valor líquido a ser pago: R$ {valorFinal}");
+            }
+
+            if(quantidade >10)
+            {
+                double desconto = valorTotal *0.05;
+                Console.WriteLine($"Valor do desconto: R$ {desconto}");
+
+                double valorFinal = valorTotal * 0.95;
+                Console.WriteLine($"Valor líquido a ser pago: R$ {valorFinal}");
+            }
+
             Console.WriteLine("----Obrigado pela preferência - Volte sempre !----");
                        
         }
